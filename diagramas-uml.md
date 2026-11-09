@@ -38,6 +38,9 @@ flowchart LR
     UC9 -. complementa .-> UC4
 ```
 
+## Como visualizar
+
+O arquivo pode ser visualizado no GitHub ou no VS Code com uma extensão que ofereça suporte a Mermaid. Também é possível colar cada bloco em um editor Mermaid compatível para exportar os diagramas como PNG ou SVG.
 ## 2. Diagrama de classes
 
 ```mermaid
@@ -110,5 +113,4 @@ classDiagram
     Usuario ..> PersistenciaLocal : dados da conta
     Habito ..> PersistenciaLocal : dados dos hábitos
 ```
-
 
