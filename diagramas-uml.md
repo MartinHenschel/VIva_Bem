@@ -19,6 +19,10 @@ flowchart LR
         UC9([Definir meta semanal])
         UC10([Configurar lembrete])
         UC11([Ativar notificações])
+        UC12([Criar desafio])
+        UC13([Convidar amigos])
+        UC14([Registrar progresso no desafio])
+        UC15([Acompanhar ranking])
     end
 
     U --> UC1
@@ -32,6 +36,10 @@ flowchart LR
     U --> UC9
     U --> UC10
     U --> UC11
+    U --> UC12
+    U --> UC13
+    U --> UC14
+    U --> UC15
     UC11 --> N
     UC10 --> N
     UC8 -. inclui .-> UC7
@@ -98,6 +106,22 @@ classDiagram
         +solicitarPermissao()
     }
 
+    class Desafio {
+        +String nome
+        +String habito
+        +int metaDias
+        +criar()
+        +convidarAmigo()
+        +registrarProgresso()
+        +gerarRanking()
+    }
+
+    class Participante {
+        +String nome
+        +int progresso
+        +registrarDia()
+    }
+
     class PersistenciaLocal {
         +salvar()
         +carregar()
@@ -112,5 +136,7 @@ classDiagram
     Progresso ..> ConclusaoDiaria : consolida
     Usuario ..> PersistenciaLocal : dados da conta
     Habito ..> PersistenciaLocal : dados dos hábitos
+    Usuario "1" --> "0..*" Desafio : cria
+    Desafio "1" --> "2..*" Participante : reúne
+    Participante ..> Habito : registra
 ```
-

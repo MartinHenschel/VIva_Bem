@@ -55,6 +55,7 @@
         <button class="nav-item" data-view="progress"><span>◔</span> Meu progresso</button>
         <button class="nav-item" data-view="goals"><span>◎</span> Metas</button>
         <button class="nav-item" data-view="reminders"><span>◷</span> Lembretes</button>
+        <button class="nav-item" data-view="challenges"><span>♛</span> Desafios</button>
       </nav>
       <div class="sidebar-bottom">
         <div class="quote">“Cuidar de si é um ato de amor.”</div>
@@ -105,10 +106,15 @@
         <div id="remindersList" class="reminders-list"></div>
         <div class="tip-box"><span>✦</span><div><strong>Dica do VivaBem</strong><p>Comece com poucos hábitos. A consistência é mais importante do que a quantidade.</p></div></div>
       </section>
+      <section id="challengesView" class="view">
+        <div class="page-intro"><div><p class="eyebrow">Motivação em grupo</p><h1>Desafios entre amigos</h1><p>Crie uma meta coletiva, convide amigos e acompanhe o ranking.</p></div><button id="addChallengeBtn" class="primary-btn">+ Novo desafio</button></div>
+        <div id="challengesList" class="challenges-list"></div>
+      </section>
     </main>
   </div>
   <div id="toast" class="toast"></div>
   <div id="modal" class="modal-backdrop hidden"><div class="modal"><button class="modal-close" id="modalClose">×</button><p class="eyebrow">Personalize sua rotina</p><h2>Novo hábito</h2><form id="habitForm"><label class="field">Nome do hábito<input id="habitName" required placeholder="Ex.: Ler por 20 minutos"></label><label class="field">Ícone<select id="habitIcon"><option>◉</option><option>💧</option><option>☀</option><option>♡</option><option>♨</option><option>✦</option><option>◌</option></select></label><label class="field">Meta semanal<input id="habitGoal" type="number" min="1" max="7" value="5" required></label><label class="field">Horário do lembrete<input id="habitTime" type="time" value="08:00"></label><button class="primary-btn full" type="submit">Adicionar hábito</button></form></div></div>
+  <div id="challengeModal" class="modal-backdrop hidden"><div class="modal"><button class="modal-close" id="challengeModalClose">×</button><p class="eyebrow">Desafio entre amigos</p><h2>Criar desafio</h2><form id="challengeForm"><label class="field">Nome do desafio<input id="challengeName" required placeholder="Ex.: Semana da hidratação"></label><label class="field">Hábito do desafio<input id="challengeHabit" required placeholder="Ex.: Beber água"></label><label class="field">Convidar amigo<input id="challengeFriend" required placeholder="Nome do amigo"></label><label class="field">Meta de dias<input id="challengeGoal" type="number" min="1" max="30" value="7" required></label><button class="primary-btn full" type="submit">Criar e convidar</button></form></div></div>
   <script src="app.js"></script>
 </body>
 </html>
