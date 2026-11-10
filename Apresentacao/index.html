@@ -122,9 +122,19 @@
       </div>
     </section>
 
-    <section class="slide" data-speaker="Lawrence" data-title="Ranking dos desafios">
+    <section class="slide" data-speaker="Lawrence" data-title="Criar um desafio">
       <div class="slide-inner">
         <p class="eyebrow">11 · novo requisito</p>
+        <h2>Criar um desafio</h2>
+        <div class="single-screen"><img src="sistema-8.png" alt="Tela de criação de desafio entre amigos do VivaBem"></div>
+        <p class="screen-explanation"><strong>O que esta página faz:</strong> permite definir o nome do desafio, escolher o hábito acompanhado, convidar um amigo e estabelecer a meta de dias. Ao confirmar, o desafio é criado e o participante recebe o convite.</p>
+        <p class="speaker-note"><strong>Fala sugerida:</strong> “Nesta tela o usuário configura o desafio e convida um amigo. Assim, o novo requisito começa com uma meta clara e participantes definidos.”</p>
+      </div>
+    </section>
+
+    <section class="slide" data-speaker="Lawrence" data-title="Ranking dos desafios">
+      <div class="slide-inner">
+        <p class="eyebrow">12 · novo requisito</p>
         <h2>Ranking dos desafios</h2>
         <div class="single-screen"><img src="sistema-7.png" alt="Tela de ranking dos desafios entre amigos do VivaBem"></div>
         <p class="screen-explanation"><strong>O que esta página faz:</strong> apresenta a classificação dos participantes com base nos dias de hábitos registrados. O usuário acompanha sua posição, visualiza o progresso de cada amigo e entende quem está mais próximo de alcançar a meta do desafio.</p>
@@ -134,7 +144,7 @@
 
     <section class="slide" data-speaker="Lucas" data-title="Cronograma">
       <div class="slide-inner">
-        <p class="eyebrow">12 · planejamento</p>
+        <p class="eyebrow">13 · planejamento</p>
         <h2>Nosso cronograma em sprints</h2>
         <p class="subtitle">O quadro Kanban organizou as entregas por prioridade, responsável e período.</p>
         <figure class="evidence-figure"><img class="evidence-image schedule-image" src="cronograma.jpeg" alt="Print do cronograma Kanban do projeto VivaBem"><figcaption><strong>Resumo:</strong> começamos refinando requisitos, depois passamos pela descoberta, construção e validação, até documentar e preparar a apresentação.</figcaption></figure>
@@ -144,7 +154,7 @@
 
     <section class="slide" data-speaker="Lucas" data-title="Diagrama de casos de uso">
       <div class="slide-inner">
-        <p class="eyebrow">13 · UML 1</p>
+        <p class="eyebrow">14 · UML 1</p>
         <h2>Diagrama de casos de uso</h2>
         <p class="subtitle">Mapeamos as ações do usuário e a integração com o serviço de notificações.</p>
         <figure class="evidence-figure"><img class="evidence-image use-case-image" src="diagrama-casos-de-uso.jpeg" alt="Print do diagrama UML de casos de uso do VivaBem"><figcaption><strong>Resumo:</strong> mostra as ações do usuário, como login, cadastro, conclusão, metas e lembretes, incluindo a integração com notificações.</figcaption></figure>
@@ -153,7 +163,7 @@
 
     <section class="slide" data-speaker="Lucas" data-title="Diagrama de sequência">
       <div class="slide-inner">
-        <p class="eyebrow">14 · UML 2</p>
+        <p class="eyebrow">15 · UML 2</p>
         <h2>Diagrama de sequência</h2>
         <p class="subtitle">Fluxo de marcar um hábito como concluído, do clique até a atualização do progresso.</p>
         <figure class="evidence-figure"><svg viewBox="0 0 1000 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama de sequência: marcar hábito como concluído" style="width:100%;height:auto;max-height:52vh;font-family:DM Sans,sans-serif"><defs><marker id="ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f3a2f"/></marker></defs><rect x="20" y="10" width="160" height="40" rx="8" fill="#e4f1e8" stroke="#4e9a73"/><text x="100" y="35" text-anchor="middle" font-size="15" font-weight="600" fill="#1f3a2f">Usuário</text><line x1="100" y1="50" x2="100" y2="400" stroke="#9db8a8" stroke-dasharray="5 5"/><rect x="220" y="10" width="160" height="40" rx="8" fill="#e4f1e8" stroke="#4e9a73"/><text x="300" y="35" text-anchor="middle" font-size="15" font-weight="600" fill="#1f3a2f">Interface</text><line x1="300" y1="50" x2="300" y2="400" stroke="#9db8a8" stroke-dasharray="5 5"/><rect x="420" y="10" width="160" height="40" rx="8" fill="#e4f1e8" stroke="#4e9a73"/><text x="500" y="35" text-anchor="middle" font-size="15" font-weight="600" fill="#1f3a2f">ConclusaoDiaria</text><line x1="500" y1="50" x2="500" y2="400" stroke="#9db8a8" stroke-dasharray="5 5"/><rect x="620" y="10" width="160" height="40" rx="8" fill="#e4f1e8" stroke="#4e9a73"/><text x="700" y="35" text-anchor="middle" font-size="15" font-weight="600" fill="#1f3a2f">PersistenciaLocal</text><line x1="700" y1="50" x2="700" y2="400" stroke="#9db8a8" stroke-dasharray="5 5"/><rect x="820" y="10" width="160" height="40" rx="8" fill="#e4f1e8" stroke="#4e9a73"/><text x="900" y="35" text-anchor="middle" font-size="15" font-weight="600" fill="#1f3a2f">Progresso</text><line x1="900" y1="50" x2="900" y2="400" stroke="#9db8a8" stroke-dasharray="5 5"/><line x1="106" y1="90" x2="294" y2="90" stroke="#1f3a2f" stroke-width="1.6"  marker-end="url(#ar)"/><text x="200.0" y="82" text-anchor="middle" font-size="13" fill="#1f3a2f">1. clica em "Concluir"</text><line x1="306" y1="130" x2="494" y2="130" stroke="#1f3a2f" stroke-width="1.6"  marker-end="url(#ar)"/><text x="400.0" y="122" text-anchor="middle" font-size="13" fill="#1f3a2f">2. marcarComoConcluida()</text><line x1="506" y1="170" x2="694" y2="170" stroke="#1f3a2f" stroke-width="1.6"  marker-end="url(#ar)"/><text x="600.0" y="162" text-anchor="middle" font-size="13" fill="#1f3a2f">3. salvar()</text><line x1="694" y1="210" x2="506" y2="210" stroke="#1f3a2f" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#ar)"/><text x="600.0" y="202" text-anchor="middle" font-size="13" fill="#1f3a2f">4. dados gravados</text><line x1="306" y1="260" x2="894" y2="260" stroke="#1f3a2f" stroke-width="1.6"  marker-end="url(#ar)"/><text x="600.0" y="252" text-anchor="middle" font-size="13" fill="#1f3a2f">5. calcularTaxa() / calcularSequencia()</text><line x1="894" y1="300" x2="306" y2="300" stroke="#1f3a2f" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#ar)"/><text x="600.0" y="292" text-anchor="middle" font-size="13" fill="#1f3a2f">6. totais atualizados</text><line x1="294" y1="350" x2="106" y2="350" stroke="#1f3a2f" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#ar)"/><text x="200.0" y="342" text-anchor="middle" font-size="13" fill="#1f3a2f">7. atualiza hábito, meta e gráfico</text></svg><figcaption><strong>Resumo:</strong> mostra a troca de mensagens entre usuário, interface, conclusão diária, persistência local (navegador) e progresso.</figcaption></figure>
@@ -162,7 +172,7 @@
 
     <section class="slide" data-speaker="Lucas" data-title="Encerramento">
       <div class="slide-inner closing">
-        <p class="eyebrow">15 · conclusão</p>
+        <p class="eyebrow">16 · conclusão</p>
         <h2>O próximo hábito começa agora.</h2>
         <p class="lead">O VivaBem transforma intenção em acompanhamento: planejar, praticar e perceber a evolução.</p>
         <div class="takeaways"><span><b>✓</b> simples de usar</span><span><b>✓</b> foco na constância</span><span><b>✓</b> evolução visível</span></div>
@@ -174,7 +184,7 @@
   <footer class="controls">
     <button id="prev" type="button" aria-label="Slide anterior">←</button>
     <div class="progress"><span id="progressBar"></span></div>
-    <span id="counter">01 / 15</span><span class="speaker" id="speaker"></span>
+    <span id="counter">01 / 16</span><span class="speaker" id="speaker"></span>
     <button id="next" type="button" aria-label="Próximo slide">→</button>
   </footer>
   <script src="app.js"></script>
